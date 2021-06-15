@@ -1,3 +1,3 @@
 ## Administrator-user.github.io
 
-@Administrator-user's homepage
+Administrator-user's personal website

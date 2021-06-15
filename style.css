@@ -3,7 +3,7 @@ body{
 }
 .title-container{
     position: absolute;
-    width: 100%;
+    width: 96%;
     height: 25%;
     background: linear-gradient(225deg,#222222,#383838);
 }

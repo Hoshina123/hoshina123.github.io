@@ -3,7 +3,9 @@ body{
 }
 .title-container{
     position: absolute;
-    width: 100%;
+    left: -2%;
+    top: -1%;
+    width: 102%;
     height: 25%;
     background: linear-gradient(225deg,#222222,#383838);
 }
@@ -14,4 +16,34 @@ label.title{
     font-size: 35px;
     font-weight: bold;
     color: #ffffff;
+}
+button.github{
+    position: absolute;
+    left: 75%;
+    top: -3%;
+    width: 15%;
+    height: 8%;
+    background: #2599ff;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+button.github a{
+    background: transparent;
+    text-decoration: none;
+    color: #ffffff;
+}
+@keyframes buttonHoverAnimation{
+    0% {top:-3%}
+    100% {top:0%}
+}
+button.github:hover{
+    top: 0%;
+    animation-name: buttonHoverAnimation;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 }

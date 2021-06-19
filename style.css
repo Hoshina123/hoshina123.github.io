@@ -9,14 +9,24 @@ body{
     height: 25%;
     background: linear-gradient(225deg,#222222,#383838);
 }
-label.title{
+img.avatar{
     position: absolute;
+    width: 3%;
+    height: auto;
     left: 10%;
     top: 10%;
+    border: none;
+    border-radius: 49.5%;
+}
+label.title{
+    position: absolute;
+    left: 14%;
+    top: 9%;
     font-size: 35px;
     font-weight: bold;
     color: #ffffff;
 }
+
 button.github{
     position: absolute;
     left: 75%;

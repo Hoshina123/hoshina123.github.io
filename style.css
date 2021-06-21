@@ -26,21 +26,42 @@ label.title{
     font-weight: bold;
     color: #ffffff;
 }
+
+label.introduce{
+    position: absolute;
+    left: 14%;
+    background: transparent;
+    font-size: 17px;
+    color: #ffffff;
+}
+label#ln01{
+    top: 34%;
+}
+label#ln02{
+    top: 42%;
+}
+label#ln03{
+    top: 50%;
+}
+label#ln04{
+    top: 58%;
+}
+label#ln05{
+    top: 66%;
+}
+
 button.profileDownload{
     position: absolute;
-    width: 20%;
-    height: 30%;
-    left: 70%;
-    top: 75%;
-    background-color: #2599ff;
+    width: 15%;
+    height: 20%;
+    left: 14%;
+    top: 77%;
+    background-color: transparent;
     background-image: url(./images/profileIcon.svg);
     background-repeat: no-repeat;
     border: none;
     border-radius: 10px;
-    font-size: 25px;
-}
-button.profileDownload:hover{
-    background-color: #3fa5ff;
+    font-size: 20px;
 }
 button.profileDownload a{
     position: relative;
@@ -49,6 +70,9 @@ button.profileDownload a{
     background: transparent;
     text-decoration: none;
     color: #ffffff;
+}
+button.profileDownload a:hover{
+    text-decoration: underline;
 }
 
 button.github{

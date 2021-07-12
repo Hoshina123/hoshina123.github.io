@@ -117,7 +117,7 @@ label.contributionsTitle{
 }
 .contributions{
     position: absolute;
-    width: 80%;
+    width: 75%;
     height: 25%;
     left: 10%;
     top: 28%;
@@ -150,5 +150,12 @@ div.calendar{
     border-radius: 6px;
 }
 svg.calendarView{
-    background: #d1d1d1;
+    background: transparent;
+}
+rect.contributions_day{
+    border-radius: 3px;
+}
+rect.contributions_day[level="0"]{
+    background: #ececec;
+    border: 1px solid rgb(207, 207, 207, 0.5);
 }

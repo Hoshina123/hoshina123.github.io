@@ -6,6 +6,8 @@
         <title>Administrator-user</title>
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="icon.ico" rel="icon" type="image/x-ico">
+
+        <script type="text/javascript" src="Scripts/createCalendar.js"></script>
     </head>
     <body>
         <div class="title-container">
@@ -35,10 +37,29 @@
         <!-- Contributions in the last year -->
         <label class="contributionsTitle">My contributions</label>
         <div class="contributions">
-            <label class="contributionsCount">170 contributions in the last year</label>
+            <label class="contributionsCount">173 contributions in the last year</label>
             <span class="splitline"></span>
             <div class="calendar">
-                <svg width="100%" height="100%" class="calendarView"></svg>
+                <svg width="100%" height="100%" class="calendarView">
+                    <g transform="translate(10,20)" id="contributionsCalendar">
+                        <g transform="translate(0,0)" id="week1">
+                            <rect width="13" height="13" x="13" y="0" rx="2" ry="2" 
+                            class="contributions_day" level="0"></rect>
+                            <rect width="13" height="13" x="13" y="15" rx="2" ry="2" 
+                            class="contributions_day" level="0"></rect>
+                            <rect width="13" height="13" x="13" y="30" rx="2" ry="2" 
+                            class="contributions_day" level="0"></rect>
+                            <rect width="13" height="13" x="13" y="45" rx="2" ry="2" 
+                            class="contributions_day" level="0"></rect>
+                            <rect width="13" height="13" x="13" y="60" rx="2" ry="2" 
+                            class="contributions_day" level="0"></rect>
+                            <rect width="13" height="13" x="13" y="75" rx="2" ry="2" 
+                            class="contributions_day" level="0"></rect>
+                            <rect width="13" height="13" x="13" y="90" rx="2" ry="2" 
+                            class="contributions_day" level="0"></rect>
+                        </g>
+                    </g>
+                </svg>
             </div>
         </div>
     </body>

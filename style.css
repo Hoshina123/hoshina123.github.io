@@ -111,15 +111,15 @@ label.contributionsTitle{
     position: absolute;
     width: 50%;
     height: 2%;
-    left: 10.25%;
+    left: 15.25%;
     top: 25%;
     background: transparent;
 }
 .contributions{
     position: absolute;
-    width: 75%;
+    width: 70%;
     height: 25%;
-    left: 10%;
+    left: 15%;
     top: 28%;
     background: transparent;
     border: 1px solid #d6d6d6;
@@ -142,10 +142,9 @@ span.splitline{
 }
 div.calendar{
     position: absolute;
-    width: 96%;
+    width: 98%;
     height: 75%;
     top: 18%;
-    left: 2%;
     background: transparent;
     border-radius: 6px;
 }

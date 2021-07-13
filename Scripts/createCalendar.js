@@ -58,8 +58,8 @@ window.onload = function(){
         0,0,2,0,0,0,0,0,0,0,0,0,2,1,
         2,4,1,2,2,1,0,0,1,1,1,2,0,1,
         1,0,0,1,1,1,0,1,1,1,1,1,1,0,
-        1,0,1,2,0];
-    levelColors = ["#ececec","#86ee97","#49e673","#00cc52","#00a039"];
+        1,0,1,2,1];
+    levelColors = ["#ececec","#86ee97","#49df80","#00c645","#009930"];
     for (let i=1;i<=367;i++){
         let item = document.getElementById(i);
         item.setAttribute("level",levels[i-1]);

@@ -86,7 +86,7 @@ button.github{
     border: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
     color: #ffffff;
 }
@@ -149,5 +149,16 @@ div.calendar{
     border-radius: 6px;
 }
 svg.calendarView{
+    background: transparent;
+}
+div.legend{
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    left: 75%;
+    top: 90%;
+    background: transparent;
+}
+svg.contributionsLegend{
     background: transparent;
 }

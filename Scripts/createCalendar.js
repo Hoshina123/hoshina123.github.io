@@ -3,7 +3,7 @@ window.onload = function(){
     var weekIndex = 1;
     var weekX = 0;
     var contributions = document.getElementById("contributionsCalendar");
-    const deletes = 4;
+    const deletes = 3;
 
     for (let w=0;w<52;w++){
         weekIndex++;
@@ -58,7 +58,7 @@ window.onload = function(){
         0,0,2,0,0,0,0,0,0,0,0,0,2,1,
         2,4,1,2,2,1,0,0,1,1,1,2,0,1,
         1,0,0,1,1,1,0,1,1,1,1,1,1,0,
-        1,0,1,2,1];
+        1,0,1,2,1,1];
     levelColors = ["#ececec","#86ee97","#49df80","#00c645","#009930"];
     for (let i=1;i<=367;i++){
         let item = document.getElementById(i);

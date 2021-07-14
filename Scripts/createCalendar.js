@@ -60,7 +60,7 @@ window.onload = function(){
         1,0,0,1,1,1,0,1,1,1,1,1,1,0,
         1,0,1,2,1,1];
     levelColors = ["#ececec","#86ee97","#49df80","#00c645","#009930"];
-    for (let i=1;i<=367;i++){
+    for (let i=1;i<=368;i++){
         let item = document.getElementById(i);
         item.setAttribute("level",levels[i-1]);
         let index = Number(item.getAttribute("level"));

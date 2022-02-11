@@ -1,21 +1,28 @@
 body{
-    background: #0176EA;
+    background: #FFFFFF;
     font-family: 'Consolas','Microsoft YaHei UI';
 }
 
-h1#maintenance{
-    text-align: center;
-    font-size: xx-large;
-    background: transparent;
-    color: #FFE792;
-    padding-top: 25%;
+.header{
+    background: linear-gradient(-30deg, #FF00FF, #0000FF,#00ACFF);
+    width: 105%;
+    height: 200px;
+    margin-top: -1%;
+    margin-left: -2.5%;
 }
-a#link{
+h1{
+    background: transparent;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 4%;
+}
+p.desc{
     background: transparent;
     font-size: medium;
-    color: #aaaaaa;
-    opacity: 60%;
-    cursor: pointer;
-    margin-top: 100%;
-    margin-left: 87%;
+    font-weight: lighter;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 2%;
 }

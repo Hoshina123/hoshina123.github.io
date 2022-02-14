@@ -7,7 +7,7 @@ body{
     background: linear-gradient(-30deg, #FF00FF, #0000FF,#00ACFF);
     width: 105%;
     height: 200px;
-    margin-top: -1%;
+    margin-top: -3%;
     margin-left: -2.5%;
 }
 h1{
@@ -25,4 +25,31 @@ p.desc{
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     padding-top: 2%;
+}
+
+.slide-header{
+    background:#ffffff;
+    border-bottom: rgba(192, 192, 192, 0.5) 2px;
+    width: 105%;
+    height: 50px;
+    margin-left: -10px;
+    margin-top: 10px;
+    position: fixed;
+    display: none;
+}
+img.sh-img{
+    background-image: url("./icon.ico");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 9px;
+}
+h2{
+    background: transparent;
+    color: #181818;
+    font-weight: normal;
+    font-size: large;
+    margin-left: 45px;
+    margin-top: -30px;
 }

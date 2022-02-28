@@ -1,0 +1,117 @@
+body{
+    background: #FFFFFF;
+    font-family: Consolas, 'Microsoft YaHei UI';
+}
+
+h1{
+    color: #101018;
+    font-size: x-large;
+    font-weight: bold;
+}
+hr.splitline{
+    background: #007EFF;
+    width: 103.18%;
+    height: 5px;
+    margin-left: -2.5%;
+    border: none;
+}
+
+div.load-cube-grid{
+    width: 90px;
+    height: 90px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+div.load-cube{
+    width: 30px;
+    height: 30px;
+    animation-name: load-cube-animate;
+    animation-duration: 1.2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+div#load-cube-1{
+    animation-delay: 0.2s;
+}
+div#load-cube-2{
+    animation-delay: 0.3s;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+div#load-cube-3{
+    animation-delay: 0.4s;
+    margin-top: -30px;
+    margin-left: 60px;
+}
+div#load-cube-4{
+    animation-delay: 0.1s;
+}
+div#load-cube-5{
+    animation-delay: 0.2s; 
+    margin-top: -30px;
+    margin-left: 30px;
+}
+div#load-cube-6{
+    animation-delay: 0.3s;
+    margin-top: -30px;
+    margin-left: 60px;
+}
+div#load-cube-7{
+    animation-delay: 0s;
+}
+div#load-cube-8{
+    animation-delay: 0.1s;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+div#load-cube-9{
+    animation-delay: 0.2s;
+    margin-top: -30px;
+    margin-left: 60px;
+}
+@keyframes load-cube-animate{
+    0%, 90%, 100% {transform: scale3d(1, 1, 1);}
+    45% {transform: scale3d(0, 0, 1);}
+}
+
+div.autodown-msg{
+    background: transparent;
+    width: 100%;
+    font-size: medium;
+    text-align: center;
+}
+p.autodown-text{
+    text-align: center;
+}
+
+button.manual-down{
+    background: #FFFFFF;
+    color: #000000;
+    width: 10rem;
+    height: 3rem;
+    font-size: medium;
+    text-align: center;
+    border-style: solid;
+    border-color: #007EFF;
+    border-width: 2px;
+    border-radius: 10px;
+}
+button.manual-down:hover{
+    background: #028EFF;
+    border: 1px solid #007EFF;
+    box-shadow: 2px 2px 8px #0077ff;
+}
+button.manual-down:active{
+    background: #007EFF;
+    border: 1px solid #0067FF;
+    box-shadow: 2px 2px 8px #0077FF;
+}
+a#down{
+    text-decoration: none;
+    color: #000000;
+}

@@ -115,10 +115,22 @@ div.sh-focus{
     width: 6rem;
     height: 45px;
     border: none;
+    margin-top: -50px;
+    border-bottom-style: solid;
+    border-bottom-color: #28AE46;
+    border-bottom-width: 3px;
+    display: none;
+}
+div.sh-focus#bar-focus{
+    background: transparent;
+    color: #AFAFAF;
+    width: 6rem;
+    height: 45px;
+    border: none;
     margin-top: -60px;
     border-bottom-style: solid;
     border-bottom-color: #28AE46;
-    border-bottom-width: 4px;
+    border-bottom-width: 3px;
     display: none;
 }
 

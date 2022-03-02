@@ -5,6 +5,22 @@ function changeFocus(index){
     for (let i=0;i<tabs.length;i++){
         if (i == index){
             tabs[i].setAttribute("id","product-btn-focus");
+            if (i==0){
+                $("#focus").fadeIn(100).animate({
+                    "margin-left": document.body.offsetWidth*(i+1)*0.25+10
+                },500);
+                $("#bar-focus").fadeIn(100).animate({
+                    "margin-left": document.body.offsetWidth*(i+1)*0.25+160
+                },500);
+            }
+            else{
+                $("#focus").fadeIn(100).animate({
+                    "margin-left": document.body.offsetWidth*(i+1)*0.3+15
+                },500);
+                $("#bar-focus").fadeIn(100).animate({
+                    "margin-left": document.body.offsetWidth*(i+1)*0.3+123
+                },500);
+            }
         }
         else{
             tabs[i].setAttribute("id","");

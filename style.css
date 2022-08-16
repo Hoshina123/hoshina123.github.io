@@ -1,14 +1,14 @@
 body{
     background: linear-gradient(to right bottom, #22232E 100%, #33353F 100%);
 }
-
-.text{
-    color: #FFFFFF;
-    font-family: 'Consolas', 'Microsoft YaHei UI', 'Monospace', 'Courier New';
-}
-
 h1{
     font-size: 60pt;
     text-align: center;
     margin-top: 5rem;
+}
+
+
+.text{
+    color: #FFFFFF;
+    font-family: 'Consolas', 'Microsoft YaHei UI', 'Monospace', 'Courier New';
 }

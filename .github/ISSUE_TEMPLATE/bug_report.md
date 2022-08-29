@@ -4,35 +4,40 @@ about: Create a report to help us improve
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
-**Describe the bug**
+## 描述问题 / Describe the bug
+
 A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
+## 问题重现 / To Reproduce
+
+1. ...
+2. ...
+3. ...
 4. See error
 
-**Expected behavior**
+## 期待的解决方案 / Expected behavior
+
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
+## 屏幕截图 / Screenshots
+
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## 桌面端 / Desktop (please complete the following information)
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+- 操作系统/OS : [e.g. Windows 11]
+- 浏览器/Browser [e.g. chrome, safari]
+- 版本/Version [e.g. 22]
 
-**Additional context**
+## 移动端 / Mobile (please complete the following information)
+
+- 设备/Device: [e.g. iPhone13]
+- 操作系统/OS: [e.g. iOS15]
+- 浏览器/Browser [e.g. stock browser, safari]
+- 版本/Version [e.g. 22]
+
+## 附加信息 / Additonal context
+
 Add any other context about the problem here.

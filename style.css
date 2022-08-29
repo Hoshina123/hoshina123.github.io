@@ -1,20 +1,43 @@
+/* 全局配色 */
+:root{
+    --theme-color: #0077FF;
+    --text-color: #FEFEFE;
+    --text-tips-color: rgba(231, 231, 231, 0.7);
+    --button-focus-background: rgba(20, 20, 25, 0.2);
+    --page-background: #FCFCFC;
+    --default-shadow: #30353D;
+    --theme-shadow: #2194FF;
+    --line-color: #AACCFF;
+    --drag-border-color: rgba(226, 237, 250, 0.6);
+    --drag-border-focus: rgba(255, 255, 255, 0.75);
+}
+*{
+    box-sizing: border-box;
+    outline: 0px;
+}
+
 body{
-    background: #FCFCFC;
+    background: var(--page-background);
     margin: 0px;
+    user-select: none;
+    overflow-x: hidden;
 }
 .text{
     font-family: 'Consolas', 'Microsoft YaHei UI', 'Monospace';
 }
 
+/* 菜单栏部分 */
 .menubar{
-    position: fixed;
+    z-index: 1;
+    position: absolute;
+    top: 0;
     width: 100%;
-    margin: 0;
     height: 70px;
-    background: rgba(249, 250, 255, 0.8);
-    box-shadow: 0 0 15px #3C3D3F;
+    background: rgba(249, 250, 255, 0);
+    box-shadow: 0 0 10px var(--default-shadow);
     padding-left: 5px;
     padding-right: 5px;
+    float:inline-start;
 }
 .avatar{
     width: 45px;
@@ -30,8 +53,49 @@ body{
     position: absolute;
     margin-left: 10px;
     padding-top: 22px;
+    color: var(--text-color);
+}
+.buttons{
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: center;
+}
+.menuButton{
+    background: transparent;
+    border-radius: 10px;
+    border-width: 0;
+    width: 7%;
+    height: 48px;
+    color: var(--text-color);
+    float: right;
+    margin: 25px;
+    margin-top: 12.5px;
+    padding-top: 12.5px;
+    text-align: center;
+    cursor: pointer;
+}
+.menuButton::before{
+    position: absolute;
+    content: '';
+    background: var(--line-color);
+    border: none;
+    width: calc(5% - 35px);
+    height: 3.5px;
+    border-radius: 2px;
+    transition: 0.3s;
+    transform: scale(0);
+    opacity: 0;
+    margin-top: 21px;
+}
+.menuButton:hover{
+    background: var(--button-focus-background);
+}
+.menuButton:hover::before{
+    transform: scale(1);
+    opacity: 1;
 }
 
+/* 页首图片 */
 #pagetop.onload{
     transform: scale(1);
     opacity: 1;
@@ -44,31 +108,79 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(Images/img2.jpg);
-    transition: transform 1.2s, opacity 1s;
+    background-image: url(Images/img1.jpg);
+    transition: transform 1s, opacity01.5s;
     transform: scale(1.05);
     opacity: 0;
 }
 
+/* 主页 */
+.start{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
 h1{
     font-size: 35pt;
     font-weight: 400;
-    text-align: center;
-    margin: 0px;
-    padding-top: 200px;
-    color: #FFFFFF;
+    color: var(--text-color);
+    text-shadow: 0px 0px 2px var(--theme-shadow);
+    margin: 0;
+    padding-bottom: 3px;
 }
 .splitline{
-    background: #AACCFF;
-    width: 30%;
+    position: absolute;
+    width: calc(252pt + 30px);
     height: 5px;
-    margin-top: 8px;
-    margin-bottom: 3px;
+    border-radius: 1.5px;
+    left: calc(50% - 126pt - 15px);
+    background: var(--line-color);
 }
 h2{
     font-size: 18pt;
     font-weight: 300;
-    text-align: center;
+    color: var(--text-color);
+    text-shadow: 0px 0px 2px var(--default-shadow);
+    margin: 0;
+    padding-top: 3px;
+}
+
+/* 滚动提示 */
+.dragMask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.dragtips{
     margin: 0px;
-    color: #FFFFFF;
+    font-size: 10pt;
+    color: var(--text-tips-color);
+}
+.dragdown{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: var(--drag-border-color);
+    border-top-width: 4px;
+    border-left-width: 4px;
+    border-radius: 3px;
+    top: 0px;
+    transition: all 0.3s;
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+.dragdown:hover{
+    top: 3px;
+    border-color: var(--drag-border-focus);
 }

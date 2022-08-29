@@ -3,24 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>xzx7131</title>
         <link href="favicon.ico" rel="icon" type="image/x-ico">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="menubar" id="menu">
-            <img class="avatar" src="Images/AvatarImage.jpg">
+            <img class="avatar" src="Images/AvatarImage.jpg" alt="xzx7131">
             <label class="text menuName">xzx7131</label>
+            
+            <span class="buttons">
+                <a class="menuButton works">作品</a>
+                <a class="menuButton about"">关于</a>
+                <a class="menuButton home" herf="#pagetop">主页</a>
+            </span>
         </div>
 
         <!-- 页首部分 -->
         <div id="pagetop" class="onload"></div>
         <div class="text start" align="center">
             <h1>星星之火,<br>正当燎原.</h1>
-            <div class="splitline"></div>
-            <h2>这里是 xzx7131 的个人主页</h2>
+            <span class="splitline"></span>
+            <h2>欢迎来到 xzx7131 的个人主页</h2>
         </div>
-
-
+        <!-- 滚动提示 -->
+        <div class="dragMask">
+            <p class="dragContent">
+                <span class="text dragtips">向下滑动查看更多</span>
+                <div class="dragdown"></div>
+            </p>
+        </div>
     </body>
 </html>

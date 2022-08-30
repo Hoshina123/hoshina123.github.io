@@ -167,6 +167,7 @@ h2{
 }
 .dragdown{
     position: relative;
+    z-index: -90;
     width: 35px;
     height: 35px;
     border-style: solid;
@@ -183,4 +184,50 @@ h2{
 .dragdown:hover{
     top: 3px;
     border-color: var(--drag-border-focus);
+}
+
+/* 关于部分 */
+.aboutme{
+    position: absolute;
+    z-index: -90;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    top: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: var(--page-background);
+}
+.title{
+    margin: 10px;
+}
+.aboutTitle{
+    font-size: 30pt;
+    font-weight: 500;
+}
+.aboutTitle::before{
+    position: absolute;
+    content: '';
+    background: var(--theme-color);
+    border: none;
+    width: 80px;
+    height: 4px;
+    border-radius: 0.7px;
+    margin-top: 50px;
+    margin-left: calc(60pt + 15px);
+    transform: rotate(135deg);
+}
+.aboutTitleEn{
+    position: relative;
+    font-size: 28pt;
+    font-weight: 500;
+    padding-left: calc(30pt - 15px);
+    top: calc(30pt - 10px);
+}
+.aboutContent{
+    position: relative;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 2;
+    top: 90px;
 }

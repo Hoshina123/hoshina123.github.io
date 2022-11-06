@@ -2,14 +2,17 @@
 :root{
     --theme-color: #0077FF;
     --text-color: #FEFEFE;
+    --text-unimportant-color: #bdbdbd;
     --text-tips-color: rgba(231, 231, 231, 0.7);
     --button-focus-background: rgba(20, 20, 25, 0.2);
     --page-background: #FCFCFC;
+    --page-gray-background: #EFEFEF;
     --default-shadow: #30353D;
     --theme-shadow: #2194FF;
     --line-color: #AACCFF;
     --drag-border-color: rgba(226, 237, 250, 0.6);
     --drag-border-focus: rgba(255, 255, 255, 0.75);
+    --default-dark: #22272E;
 }
 *{
     box-sizing: border-box;
@@ -21,6 +24,7 @@ body{
     margin: 0px;
     user-select: none;
     overflow-x: hidden;
+    min-height: 100%;
 }
 .text{
     font-family: 'Consolas', 'Microsoft YaHei UI', 'Monospace';
@@ -109,7 +113,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(Images/img1.jpg);
-    transition: transform 1s, opacity01.5s;
+    transition: transform 1.5s, opacity 1s;
     transform: scale(1.05);
     opacity: 0;
 }
@@ -186,15 +190,29 @@ h2{
     border-color: var(--drag-border-focus);
 }
 
-/* 关于部分 */
-.aboutme{
+.content{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     z-index: -90;
     width: 100%;
     text-align: center;
     align-items: center;
     top: 100%;
     padding-top: 80px;
+    padding-bottom: 100px;
+    background: var(--page-background);
+}
+/* 关于部分 */
+.aboutme{
+    z-index: -90;
+    order: 0;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    align-items: center;
+    padding-top: 40px;
     padding-bottom: 100px;
     background: var(--page-background);
 }
@@ -230,4 +248,128 @@ h2{
     font-weight: 300;
     line-height: 2;
     top: 90px;
+}
+
+/* 作品部分 */
+.myworks{
+    z-index: -90;
+    width: 100%;
+    order: 2;
+    height: max-content;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: var(--page-gray-background);
+}
+.worksTitle{
+    font-size: 30pt;
+    font-weight: 500;
+}
+.worksTitle::before{
+    position: absolute;
+    content: '';
+    background: var(--theme-color);
+    border: none;
+    width: 80px;
+    height: 4px;
+    border-radius: 0.7px;
+    margin-top: 50px;
+    margin-left: calc(90pt + 15px);
+    transform: rotate(135deg);
+}
+.worksTitleEn{
+    position: relative;
+    font-size: 28pt;
+    font-weight: 500;
+    padding-left: calc(30pt - 15px);
+    top: calc(30pt - 10px);
+}
+
+.info{
+    opacity: 0.6;
+}
+.info:hover{
+    opacity: 1;
+}
+.infoImage{
+    position: relative;
+    width: 15px;
+    height: auto;
+    top: 15px;
+    right: 15px;
+}
+
+.workCards{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    height: max-content;
+    padding: 80px 10%;
+}
+
+.tag{
+    font-size: 10pt;
+    opacity: 0.7;
+    border-radius: 5px;
+    width: max-content;
+    height: 20px;
+    padding: 2px 7px;
+    color: rgb(21, 42, 35);
+}
+.inprogress{
+    background-color: #74e6c0;
+}
+.finished{
+    background-color: #ffe372;
+}
+.experimental{
+    background-color: #c37fff;
+}
+
+.card.text{
+    position: relative;
+    margin: 10px;
+    padding: 7px;
+    text-align: left;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px var(--default-shadow);
+}
+.cardImage{
+    width: 100%;
+    height: 65%;
+    border-radius: 5px;
+}
+.cardTitle{
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 5px;
+    margin: 3px 0px;
+}
+.cardContent{
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 1.5;
+    padding: 5px;
+    margin: 3px 0px;
+}
+
+/* 页脚部分 */
+.footer{
+    position: absolute;
+    bottom: -200%;
+    width: 100%;
+    background: var(--default-dark);
+    padding: 7px 45px;
+}
+.ft{
+    font-weight: 300;
+    color: var(--text-color);
+}
+.unimportant{
+    color: var(--text-unimportant-color);
 }

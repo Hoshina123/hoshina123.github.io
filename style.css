@@ -1,18 +1,26 @@
 /* 全局配色 */
 :root{
     --theme-color: #0077FF;
+
     --text-color: #FEFEFE;
     --text-unimportant-color: #bdbdbd;
     --text-tips-color: rgba(231, 231, 231, 0.7);
-    --button-focus-background: rgba(20, 20, 25, 0.2);
+
+    --button-focus-background: rgba(35, 35, 39, 0.2);
+    --button-hover-background: rgba(142, 142, 142, 0.1);
+
     --page-background: #FCFCFC;
     --page-gray-background: #EFEFEF;
+
     --default-shadow: #30353D;
     --theme-shadow: #2194FF;
+
     --line-color: #AACCFF;
     --drag-border-color: rgba(226, 237, 250, 0.6);
     --drag-border-focus: rgba(255, 255, 255, 0.75);
+    
     --default-dark: #22272E;
+    --default-mask: rgba(49, 50, 50, 0.7);
 }
 *{
     box-sizing: border-box;
@@ -97,6 +105,73 @@ body{
 .menuButton:hover::before{
     transform: scale(1);
     opacity: 1;
+}
+
+/* 弹窗遮罩 */
+.popupMask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--default-mask);
+    z-index: 100;
+    display: none;
+}
+.popup{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px 15px;
+
+    width: calc(100% - 50px);
+    min-width: 300px;
+    max-width: 600px;
+
+    height: calc(100% - 100px);
+    min-height: 225px;
+    max-height: 450px;
+
+    background-color: var(--page-background);
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px 3px var(--default-shadow);
+}
+.popupClose{
+    position: absolute;
+
+    background-color: transparent;
+    background-image: url(Images/Buttons/Close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: none;
+    border-radius: 7px;
+
+    width: 60px;
+    height: 45px;
+    right: 7.5px;
+    top: 7.5px;
+}
+.popupClose:hover{
+    background-color: var(--button-hover-background);
+}
+.pContent{
+    position: absolute;
+    padding: 20px 30px;
+
+    font-weight: 400;
+}
+.pTitle{
+    font-size: 25pt;
+}
+.pText{
+    font-size: 14pt;
+    resize: none;
+    border: none;
 }
 
 /* 页首图片 */
@@ -326,6 +401,27 @@ h2{
     background-color: #c37fff;
 }
 
+@keyframes cardAnim{
+    0%{
+        transform: translate(0, 0px);
+        box-shadow: 0 0 6px var(--default-shadow);
+    }
+    100%{
+        transform: translate(0, -15px);
+        box-shadow: 0 3px 6px var(--default-shadow);
+    }
+}
+@keyframes cardAnimReverse{
+    0%{
+        transform: translate(0, -15px);
+        box-shadow: 0 3px 6px var(--default-shadow);
+    }
+    100%{
+        transform: translate(0, 0px);
+        box-shadow: 0 0 6px var(--default-shadow);
+    }
+}
+
 .card.text{
     position: relative;
     margin: 10px;
@@ -334,6 +430,17 @@ h2{
     width: 50%;
     border-radius: 5px;
     box-shadow: 0 0 6px var(--default-shadow);
+    z-index: 10;
+    animation-name: cardAnimReverse;
+    animation-duration: 350ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.card:hover{
+    animation-name: cardAnim;
+    animation-duration: 350ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 .cardImage{
     width: 100%;

@@ -9,7 +9,7 @@ function pageScroll(element){
         scrollToTop(sy, 10, 10);
     }
     else{
-        scrollToElement(sy, dy, 10, 15)
+        scrollToElement(sy, dy, 10, 15);
     }
 }
 

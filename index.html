@@ -8,6 +8,7 @@
         <link href="favicon.ico" rel="icon" type="image/x-ico">
         <link href="style.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="Scripts/pageScroll.js"></script>
+        <script type="text/javascript" src="Scripts/popupCtrl.js"></script>
     </head>
     <body>
         <!-- 顶部菜单栏 -->
@@ -20,6 +21,19 @@
                 <a class="menuButton about" onclick="pageScroll('about');">关于</a>
                 <a class="menuButton home" onclick="pageScroll('pagetop');">主页</a>
             </span>
+        </div>
+
+        <!-- 弹窗 -->
+        <div class="popupMask" id="popmask">
+            <div class="popup" id="popup">
+                <button class="popupClose" onclick="popupHide();" title="关闭"></button>
+                
+                <p class="pContent">
+                    <span class="text pTitle" id="popupTitle">Popup</span>
+
+                    <textarea class="text pText" id="popupText" rows="15" cols="48" readonly></textarea>
+                </p>
+            </div>
         </div>
 
         <!-- 页首部分 -->
@@ -67,14 +81,16 @@
                     <span class="text worksTitleEn">
                         My works
                         <span class="text info">
-                            <img class="infoImage" src="Images/Buttons/Info.svg">
+                            <img class="infoImage" src="Images/Buttons/Info.svg" 
+                            onclick="popupShow('关于&quot;我的作品&quot;', 0)"
+                            title="关于&quot;我的作品&quot;">
                         </span>
                     </span> 
                 </span>
 
                 <span class="text workCards">
                     <span class="text card screenrecorder">
-                        <img class="cardImage" src="Resources/ScreenRecorder_icon.png">
+                        <img class="cardImage" src="Resources/Pictures/ScreenRecorder_icon.png" alt="ScreenRecorder_icon">
                         <label class="cardTitle">Screen-Recorder</label>
                         <label class="text tag inprogress">制作中</label>
                         <br>
@@ -82,7 +98,7 @@
                     </span>
 
                     <span class="text card sudokusolver">
-                        <img class="cardImage" src="Resources/SudokuSolver_icon.png">
+                        <img class="cardImage" src="Resources/Pictures/SudokuSolver_icon.png" alt="SudokuSolver_icon">
                         <label class="cardTitle">Sudoku-Solver</label>
                         <label class="text tag finished">已完成</label>
                         <br>
@@ -90,7 +106,7 @@
                     </span>
 
                     <span class="text card ops">
-                        <img class="cardImage" src="Resources/OPS_icon.png">
+                        <img class="cardImage" src="Resources/Pictures/OPS_icon.png" alt="OPS_icon">
                         <label class="cardTitle">OPS</label>
                         <label class="text tag experimental">实验性作品</label>
                         <br>

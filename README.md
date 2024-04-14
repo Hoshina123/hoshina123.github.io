@@ -1,3 +1,3 @@
-# xzx7131.github.io
+# xzx0x00.github.io
 
-@xzx7131 's personal website
+@xzx0x00 's personal website

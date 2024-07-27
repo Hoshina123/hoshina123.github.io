@@ -1,3 +1,3 @@
-# xzx0x00.github.io
+# sakuko216.github.io
 
-@xzx0x00 's personal website
+The personal website of @Sakuko216

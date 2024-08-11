@@ -1,3 +1,3 @@
-# hoshiya123.github.io
+# hikari256.github.io
 
-The personal website of Nekotsuki Hoshiya.
+The personal website of Nekotsuki Hikari.

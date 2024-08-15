@@ -1,3 +1,3 @@
-# hoshira123.github.io
+# hoshina123.github.io
 
-The personal website of Nekotsuki Hoshira.
+The personal website of Nekotsuki Hoshina.

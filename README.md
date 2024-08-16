@@ -1,3 +1,3 @@
-# hirina123.github.io
+# honoka128.github.io
 
-The personal website of Nekotsuki Hirina.
+The personal website of Nekotsuki Honoka.

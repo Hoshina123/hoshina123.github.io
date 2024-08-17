@@ -1,3 +1,3 @@
-# honoka128.github.io
+# hinata316.github.io
 
-The personal website of Nekotsuki Honoka.
+The personal website of Nekotsuki Hinata.

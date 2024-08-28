@@ -1,3 +1,3 @@
-# chikako123.github.io
+# hoshina123.github.io
 
-The personal website of Nekotsuki Chikako.
+The personal website of Nekotsuki Hoshina.

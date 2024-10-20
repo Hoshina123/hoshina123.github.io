@@ -1,3 +1,3 @@
-# hoshina123.github.io
+# nekozx123.github.io
 
-The personal website of Nekotsuki Hoshina.
+The personal website of NekoZX.
